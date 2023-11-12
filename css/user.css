@@ -1,0 +1,151 @@
+
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Alinea el contenido verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    padding: 0;
+    margin: 0;
+}
+
+footer{
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: 'header';
+}
+
+.head_comp{
+    background-color: rgb(18, 20, 21);
+    height: 110px;
+    width: 100%;
+}
+
+.himg{
+    height: 70px;
+    width: 70px;
+    margin-top: 0.3cm;
+}
+
+
+.head-container{
+    width: 100%;
+    height: 15%;
+    background-color: black;
+}
+
+.text-container{
+    width: 100%;
+    height: 35%;
+    background-color: rgba(0, 0, 0, 0.868);
+}
+
+.text-container p{
+    color: rgb(255, 255, 255);
+    font-family: 'content';
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+}
+
+h1{
+    background-color: black; /* Color de fondo del encabezado */
+    color: white; /* Color del texto en el encabezado */
+    padding: 10px; /* Espaciado interior para el contenido del encabezado */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo de la página */
+    width: 100%; /* Ancho del 100% de la ventana del navegador */
+    text-align: center; /* Alineación del texto en el centro */
+    font-size: 40px;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+/* Estilo para el contenido */
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+#productsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Alinea los productos en el centro horizontal */
+}
+
+#pro-bigcont{
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.868);
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    max-width: 300px; /* Ancho máximo de cada producto */
+    flex: 0 1 calc(31%); /* Divide en 5 columnas, con márgenes */
+    box-sizing: border-box;
+    text-align: left;
+    background-color: black;
+    transition: background-color 0.4s;
+    font-family: 'content';
+    font-weight: bolder;
+    font-size: 22px;
+    color: white;
+}
+
+.product-card:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+@font-face {
+    font-family: 'header';
+    font-style: normal;
+    font-weight: bolder;
+    src: url('/fonts/TrueType/Jost-600-Semi.ttf') format(TrueType);
+}
+
+@font-face {
+    font-family: 'content';
+    font-style: normal;
+    font-weight: bolder;
+    src: url('/fonts/TrueType/Jost-300-Light.ttf') format(TrueType);
+}
+
+
+/* Estilo para las imágenes de los productos */
+.product-card img {
+    max-width: 100%; /* Tamaño máximo del 100% del contenedor */
+    height: 180px; /* Conserva la relación de aspecto */
+    display: block; /* Elimina el espacio en blanco debajo de las imágenes */
+}
+
+.product-card .product-image {
+    max-width: 30px; /* Establece el tamaño máximo de la imagen en miniatura */
+    height: 25px; /* Mantiene la relación de aspecto */
+    margin-right: 10px; /* Agrega un margen a la derecha para separar la imagen del precio */
+    display: inline-block; /* Muestra la imagen en línea con el texto */
+}
+
+.product-card .product-status-agotado {
+    color: red;
+}
+
+.product-card .product-status-disponible {
+    color: green;
+}

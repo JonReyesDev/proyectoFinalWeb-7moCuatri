@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('https://wallpaperset.com/w/full/f/5/d/464924.jpg'); /* Agrega la URL de tu imagen de fondo de Rocket League */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h2{
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 40px;
+}
+
+#productCode, #productName, #productPrice, #productImage{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 40px;
+}
+
+#searchCode {
+    width: 150px; /* Ajusta el ancho según tus necesidades */
+    display: flex;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.4s;
+    height: 35px;
+}
+
+button:hover {
+    background-color: rgb(74, 12, 220);
+}
+
+button #Agg{
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.4s;
+    height: 30px;
+}
+
+#Con{
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.4s;
+    height: 45px;
+    margin-top: 0 auto;
+    display: flex;
+    font-size: 14px;
+}
+
+#Con:hover {
+    background-color: rgb(74, 12, 220);
+}
+
+/* Estilo para el botón Deshabilitar Producto */
+#toggleStatusButton[data-status="1"] {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilo para el hover del botón Deshabilitar Producto (rojo) */
+#toggleStatusButton[data-status="1"]:hover {
+    background-color: green;
+}
+
+/* Estilo para el botón Habilitar Producto en el estado normal (verde) */
+#toggleStatusButton[data-status="0"] {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilo para el hover del botón Habilitar Producto (verde oscuro) */
+#toggleStatusButton[data-status="0"]:hover {
+    background-color: red;
+}
+
+
+.img-cont{
+    width: 40%;
+    border: none;
+}
+
+
+#productosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-status-enabled {
+    color: green;
+}
+
+.product-status-disabled {
+    color: red;
+}
+
+/* Ajusta el tamaño del contenedor principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%; /* Ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    text-align: center;
+    background-color: white;
+
+}
+
+.container_con {
+    display: flex;
+    justify-content: space-between;
+    width: 50%; /* Ancho del contenedor */
+    height: auto;
+    margin: 0 auto; /* Centra el contenedor en la página */
+    text-align: center;
+    background-color: white;
+}
+
+#updateProductSection {
+    display: flex;
+    justify-content: space-between;
+    width: 50%; /* Ancho del contenedor */
+    height: auto;
+    margin: 0 auto; /* Centra el contenedor en la página */
+    text-align: center;
+    background-color: white;
+}
+
+
+#productForm,
+#searchForm {
+    width: 48%; /* Ancho de cada formulario */
+}
+
+#productForm {
+    margin-right: 2%; /* Margen derecho entre formularios */
+}
+
+/* Estilo para el contenedor de detalles del producto */
+#productDetails {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto; /* Centra el contenedor en la página */
+    background-color: white;
+}
+
+#productDetails img {
+    max-width: 220px; /* Tamaño máximo deseado para la imagen */
+    height: auto;
+
+}
+
